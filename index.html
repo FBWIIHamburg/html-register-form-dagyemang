@@ -4,79 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
+    <title>Student Registration</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css"/>
 </head>
 
 <body>
 <form action="#" name="StudentRegistration" onsubmit="return(validate());">
 
-<table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+<table cellpadding="3" width="35%" bgcolor="7F81B1" align="center"
 cellspacing="2">
 
 <tr>
 <td colspan=2>
-<center><font size=4><b>Student Registration Form</b></font></center>
+<center><font size=5 color="white"><b>Student Registration Form</b></font></center>
 </td>
 </tr>
 
 <tr>
-<td>First Name</td>
-<td><input type=text name=textnames id="textname" size="30"></td>
+    <td>First Name</td>
+<td><input type=text name=textnames id="textname" size="30">(Max 30 characters a-z and A-Z)</td>
 </tr>
 
 <tr>
 <td>Last Name</td>
 <td><input type="text" name="lastname" id="lastname"
-size="30"></td>
-</tr>
-<tr>
-<td>Postal Address</td>
-<td><input type="text" name="paddress" id="paddress" size="30"></td>
+size="30">(Max 30 characters a-z and A-Z)</td>
 </tr>
 
-<tr>
-<td>Photo</td>
-<td><input type="file" name="Photo"
-id="Photo" size="30"></td>
-</tr>
+<td>DateOfBirth</td>
 
-<tr>
-<td>Sex</td>
-<td><input type="radio" name="sex" value="male" size="10">Male
-<input type="radio" name="sex" value="Female" size="10">Female</td>
-</tr>
-<tr>
-    <td>DateOfBirth</td>
-    <td><input type="date" name="DateOfBirth" id="DateOfBirth" size="30"></td>
+    <td>
+
+    <select name='day' id='dayddl'>
+    <option value='Day'>Day</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    <option value='11'>11</option>
+    <option value='12'>12</option>
+    <option value='13'>13</option>
+    <option value='14'>14</option>
+    <option value='15'>15</option>
+    <option value='16'>16</option>
+    <option value='17'>17</option>
+    <option value='18'>18</option>
+    <option value='19'>19</option>
+    <option value='20'>20</option>
+    <option value='21'>21</option>
+    <option value='22'>22</option>
+    <option value='23'>23</option>
+    <option value='24'>24</option>
+    <option value='25'>25</option>
+    <option value='26'>26</option>
+    <option value='27'>27</option>
+    <option value='28'>28</option>
+    <option value='29'>29</option>
+    <option value='30'>30</option>
+    <option value='31'>31</option>
+    </select>
+    
+
+    
+    <select name='month' id='monthddl'>
+    <option value='month'>Month</option>
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    <option value='11'>11</option>
+    <option value='12'>12</option>
+    </select>
+    
+    
+    <select name='day' id='blah'>
+    <option value='year'>Year</option>
+    <option value='1947'>1947</option>
+    <option value='1948'>1948</option>
+    <option value='1949'>1949</option>
+    <option value='1950'>1950</option>
+    <option value='1951'>1951</option>
+    <option value='1952'>1952</option>
+    <option value='1953'>1953</option>
+    <option value='1954'>1954</option>
+    <option value='1955'>1955</option>
+    <option value='1956'>1956</option>
+    <option value='1957'>1957</option>
+    <option value='1958'>1958</option>
+    <option value='1959'>1959</option>
+    <option value='1960'>1960</option>
+    <option value='1961'>1961</option>
+    <option value='1962'>1962</option>
+    <option value='1963'>1963</option>
+    <option value='1964'>1964</option>
+    <option value='1965'>1965</option>
+    <option value='1966'>1966</option>
+    <option value='1967'>1967</option>
+    <option value='1968'>1968</option>
+    <option value='1969'>1969</option>
+    <option value='1970'>1970</option>
+    <option value='1971'>1971</option>
+    <option value='1972'>1972</option>
+    <option value='1973'>1973</option>
+    <option value='1974'>1974</option>
+    <option value='1975'>1975</option>
+    <option value='1976'>1976</option>
+    <option value='1977'>1977</option>
+    <option value='1978'>1978</option>
+    <option value='1979'>1979</option>
+    <option value='1980'>1980</option>
+    <option value='1981'>1981</option>
+    <option value='1982'>1982</option>
+    <option value='1983'>1983</option>
+    <option value='1984'>1984</option>
+    <option value='1985'>1985</option>
+    <option value='1986'>1986</option>
+    <option value='1987'>1987</option>
+    <option value='1988'>1988</option>
+    <option value='1989'>1989</option>
+    <option value='1990'>1990</option>
+    <option value='1991'>1991</option>
+    <option value='1992'>1992</option>
+    <option value='1993'>1993</option>
+    </select>
+    </td>
+   
+
+ <tr>
+    <td>Email</td>
+    <td><input type="email" name="Email" id="Email" size="30"></td>
     </tr>
     
     <tr>
     <td>MobileNo</td>
-    <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+    <td><input type="number" name="mobileno" id="mobileno" size="30">(10 digit number)</td>
     </tr>
 
     <tr>
-    <td>Email</td>
-    <td><input type="email" name="Email" id="Email" size="30"></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td><input type="password" name="password" id="password" size="30"></td>
-        
+        <td>Sex</td>
+        <td><input type="radio" name="sex" value="male" size="10">Male
+        <input type="radio" name="sex" value="Female" size="10">Female</td>
         </tr>
-    
+<tr>
+<td>Address</td>
+<td><textarea name="paddress" id="paddress" size="60"></textarea></td>
+</tr>
+        
     
 <tr>
 <td>City</td>
-<td><select name="City">
-<option value="-1" selected>select..</option>
-<option value="Hamburg">Hamburg</option>
-<option value="Berlin">Berlin</option>
-<option value="Hannover">Hannover</option>
-<option value="Bremen">Bremen</option>
-</select></td>
+<td><input type="text" name="city" id="lastname"
+        size="30">(Max 30 characters a-z and A-Z)</td>
 </tr>
+
+<tr>
+    <td>Postal code</td>
+    <td><input type="number" name="Postalcode" id="lastname"
+            size="30">(6 digit number)</td>
+    </tr>
 
 <tr>
 <td>Course</td>
@@ -89,24 +186,22 @@ id="Photo" size="30"></td>
 </select></td>
 </tr>
 
-
+<tr>
+<td>Country</td>
+<td><input type="text" name="Country" id="lastname"
+    size="30">(Max 30 characters a-z and A-Z)</td>
 </tr>
 
 <tr>
-<td>Province</td>
-<td><select Name="State">
-<option value="-1" selected>select..</option>
-<option value="Brandenburg">Brandenburg</option>
-<option value="Hamburg">Hamburg</option>
-<option value="Hessen">Hessen</option>
-<option value="Westphalen">Westphalen</option>
-</select></td>
-</tr>
-
+    <td>Photo</td>
+    <td><input type="file" name="Photo"
+    id="Photo" size="30"></td>
+    </tr>
 <tr>
 <td><input type="reset"></td>
 <td colspan="2"><input type="submit" value="Submit Form" /></td>
 </tr>
+
 </table>
 </form>
 </body>
